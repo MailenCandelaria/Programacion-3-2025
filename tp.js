@@ -9,7 +9,7 @@ const todosProductos = () =>
             return response.json();
         })
         .then(datos => {
-            console.log(datos); // Muestra todos los personajes
+            console.log(datos); 
             return datos;
         })
         .catch(error => console.error(error));
