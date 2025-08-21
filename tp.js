@@ -53,7 +53,7 @@ nuevoProductoAgregado(nuevoProducto);
 
 // Buscar producto por ID (GET) (funciona)
 const buscarProductoPorId = (id) =>
-    fetch('https://fakestoreapi.com/products/') //modificar esto
+    fetch('https://fakestoreapi.com/products/') //modificar esto en la not.
         .then(response => {
             if (!response.ok) throw new Error('Error ' + response.status);
             return response.json();
@@ -82,7 +82,7 @@ eliminarProducto(1);
 
 // Modificar un producto (PUT) (funciona)
 const modificarProducto = (id, nuevosDatos) =>
-    fetch(`${urlApi}/${id}`, {
+    fetch('https://fakestoreapi.com/products/' {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(nuevosDatos)
