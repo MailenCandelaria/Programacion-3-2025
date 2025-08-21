@@ -69,7 +69,7 @@ buscarProductoPorId(1);
 
 // Eliminar producto (DELETE) (funciona)
 const eliminarProducto = (id) =>
-    fetch('https://fakestoreapi.com/products/', { method: "DELETE" })
+    fetch('https://fakestoreapi.com/products/'), { method: "DELETE" })
         .then(response => {
             if (!response.ok) throw new Error('Error ' + response.status);
             return response.json();
